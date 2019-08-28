@@ -8,7 +8,8 @@
 int recursiveSum(Node* head) {
   if(head == NULL){
 	return 0;
-  }else{
+  }
+  else{
 	return recursiveSum(head -> next) + head -> data;
   }
 }
