@@ -17,7 +17,7 @@ bool isAnagram(string s1, string s2){
   string new_s2 = "";
   for(int i = 0; i < s1.length();i++){
 	if(isalpha(s1[i])){
-		new_s1 += tolower(s2[i]);
+		new_s1 += tolower(s1[i]);
 	}
   }
   for(int j = 0l; j < s2.length();j++){
