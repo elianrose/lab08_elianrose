@@ -20,13 +20,13 @@ bool isAnagram(string s1, string s2){
 		new_s1 += tolower(s1[i]);
 	}
   }
-  for(int j = 0l; j < s2.length();j++){
+  for(int j = 0; j < s2.length();j++){
 	if(isalpha(s2[j])){
 		new_s2 += tolower(s2[j]);
 	}
   }
  
-  sort(new_s1.begin(),new_s2.end());
+  sort(new_s1.begin(),new_s1.end());
   sort(new_s2.begin(),new_s2.end());
   return(new_s1 == new_s2);
 }
@@ -47,8 +47,11 @@ bool isPalindrome(const string s1){
 	for(int i = 0; i < length; i++){
 		new_s1 += tolower(s1[length-i-1])；
 	}
-	return (new_s1==tolower(s1));
-  
+	string low_s1 = "";
+	for(int j = 0; j < length; j++){
+		low_s1 += tolower(s1[j]);
+	}
+	return(new_s1 == low_s1);
 }
 
 
