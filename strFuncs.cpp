@@ -47,7 +47,7 @@ bool isPalindrome(const string s1){
 	for(int i = 0; i < length; i++){
 		new_s1 += tolower(s1[length-i-1])；
 	}
-	return (new_s1==s1);
+	return (new_s1==tolower(s1));
   
 }
 
